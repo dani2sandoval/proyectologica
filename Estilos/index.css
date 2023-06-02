@@ -2,7 +2,7 @@
 
   body {
     font-family: 'Wix Madefor Text', sans-serif;
-    background-image: url('../Imágenes/fondo3.jpg');
+    background-image: url('../Imagenes/fondo3.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -75,15 +75,15 @@
   }
 
   .boton-piedrapapeltijeras {
-    background-image: url('../Imágenes/piedrapapeltijera.jpg');
+    background-image: url('../Imagenes/piedrapapeltijera.jpg');
   }
 
   .boton-totito {
-    background-image: url('../Imágenes/totito.jpg');
+    background-image: url('../Imagenes/totito.jpg');
   }
 
   .boton-cajero {
-    background-image: url('/Imágenes/dinero.jpg');
+    background-image: url('../Imagenes/dinero.jpg');
   }
 
   .boton-secundario {
