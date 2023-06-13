@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!--Creación de Enlace a un Documento CSS-->
+    <link rel="stylesheet" href="/src/Cajero/Estilos/styles.css">
+    <link rel="stylesheet" href="/src/Cajero/Estilos/estiloscajero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cajero Automático</title>
+        <!--Pequeño Icono de Desarrollo del sistema-->
+    <link rel="shortcut icon" href="/src/Cajero/Imagenes/monedaicon.ico">
+</head>
+<body class="fondo" id="pagina">
+
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg bg-dark ">
+
+            <div class="container-fluid">
+                <img src="/src/Cajero/Imagenes/monedaicon.ico" alt="Logo" class="encabezadologo" id="logo">
+                <h2 id="bienvenido">Bienvenido</h2>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="contenido-cajero">
+
+        <div class="opciones">
+            <div class="consultar"> </div>
+            <div class="ingresar" ></div>
+            <div class="retirar" > </div>
+        </div>
+
+        <!--Botones Principales-->
+        <div class="opcion">
+            <div class="btnConsultar"><button type="button" class="btn btn-secondary widthbtn" id="consultarSaldo">Consultar saldo</button></div>
+            <div class="btnIngresar"><button type="button" class="btn btn-secondary widthbtn" id="ingresarSaldo">Ingresar monto</button></div>
+            <div class="btnRetirar"><button type="button" class="btn btn-secondary widthbtn" id="retirarSaldo">Retirar monto</button></div>
+           
+        </div>
+
+        <!--Boton creado para cerrar la sesión del usuario-->
+        <div class="btn_Cerrar">
+            <button type="button" class="btn btn-danger" id="btnCerrarSesion">Cerrar sesión</button>
+         </div><br>
+
+         <!--Movimientos de Saldos por Cada Usuario-->
+        <div class="movimientoSaldo" id="movimientoSaldo">
+
+            <!--Movimientos de retiros e ingresos por medio de un formulario-->
+            <form class="row g-3">
+
+                <div class="col-auto">
+                  <label for="lbnCantidad" class="visually-hidden">Cantidad</label>
+                  <!--input donde ingresarermos las cantidades-->
+                  <input type="text" readonly class="form-control-plaintext" id="lbnCantidad" value="Ingrese la cantidad:">
+                </div>
+
+                <div class="col-auto">
+                  <label for="cantidad" class="visually-hidden"></label>
+                  <input type="number" class="form-control" id="numcantidad" placeholder="Cantidad">
+                </div>
+
+                <!--Codificación del Botón de confirmar transacciones-->
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3" id="btnConfirmar">Confirmar</button>
+                </div>
+
+              </form>
+        </div>
+
+        <!--Sección de Formulario-->
+        <section>
+
+        <div id="alertaInfo" class="marginAlert">
+            <!--Lógica de JS para ejecutar impresiones de Tickets-->
+        <button id="imprimirTicket" onclick="imprimirTicket()">Imprimir Ticket</button>
+
+        <div id="ticketContainer" style="display: none;"></div>
+
+        </div>
+
+        </section>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="/src/Cajero/Scripts/main.js"></script>    
+</body>
+</html>

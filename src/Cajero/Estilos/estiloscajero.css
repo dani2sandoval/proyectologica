@@ -1,0 +1,128 @@
+/* Empiezan css cajero*/
+.contenido-cajero{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    width: 843px;
+    height: 314px;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 58px;
+    padding-bottom: 40px;
+    padding-left: 58px;
+    margin-bottom: 90px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: 18px;
+}
+
+@media print {
+    #ticketContainer {
+      display: block;
+      background-position-x: center;
+    }
+    /* Estilos adicionales para el ticket impreso */
+    /* ... */
+
+    #Datos{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: auto;
+    }
+    #Datos_1{
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 58px;
+        padding-bottom: 40px;
+
+    }
+  }
+
+.opciones{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3%;
+    margin-top: 30px;
+}
+
+.consultar{
+    width: 33%;
+    height: 170px;
+    background-image:  url("/src/Cajero/Imagenes/maxresdefault.jpg");
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.ingresar{
+    width: 33%;
+    height: 170px;
+    background-image:  url("/src/Cajero/Imagenes/cajero-5b-pantalla-principal.jpg");
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.retirar{
+    width:33%;
+    height: 170px;
+    background-image:  url("/src/Cajero/Imagenes/RETIRO.jpg");
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.opcion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3%;
+
+    margin-bottom: 30px;
+   
+}
+
+.btnConsultar{
+    width: 33%;
+    height:1.2em;
+    text-align: center;
+}
+
+.btnIngresar{
+    width: 33%;
+    height:1.2em;
+    text-align: center;
+}
+.btnRetirar{
+    width: 33%;
+    height:1.2em;
+    text-align: center;
+}
+
+.widthbtn{
+    width: 100%;
+}
+
+.marginAlert{
+    margin-top: 20px;
+}
+
+.movimientoSaldo{
+    opacity: 0;
+}
+#lbnCantidad{
+    color: white;
+    font-size: 20px;
+    text-align: end;
+}
